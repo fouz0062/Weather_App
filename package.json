@@ -1,10 +1,13 @@
 {
+  "homepage": "http://fouz0062.github.io/Weather_App",
   "name": "web-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +17,8 @@
     "hbs": "^4.2.0",
     "request": "^2.88.2",
     "save": "^2.5.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
